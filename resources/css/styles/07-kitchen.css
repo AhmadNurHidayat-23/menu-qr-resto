@@ -1,0 +1,252 @@
+@media (max-width: 600px) {
+    .site-header {
+        height: 82px;
+        padding: 0 20px;
+        gap: 10px;
+    }
+    .brand {
+        font-size: 21px;
+        gap: 9px;
+    }
+    .brand-mark {
+        width: 35px;
+        height: 35px;
+    }
+    .brand-mark svg {
+        width: 18px;
+    }
+    .brand-sub {
+        font-size: 6px;
+        letter-spacing: 2.7px;
+        margin-top: 7px;
+    }
+    nav {
+        gap: 12px;
+        font-size: 11px;
+    }
+    .staff-link {
+        font-size: 0;
+        gap: 0;
+    }
+    .staff-link svg {
+        width: 20px;
+    }
+    .staff-link svg:last-child {
+        display: none;
+    }
+    nav .icon-btn {
+        padding: 6px;
+    }
+    .site-header nav:has(.selected) {
+        gap: 12px;
+        font-size: 10px;
+    }
+    .hero {
+        padding: 30px 20px;
+        grid-template-columns: 1fr;
+        gap: 25px;
+    }
+    .hero h1 {
+        font-size: 62px;
+        margin: 20px 0;
+    }
+    .hero-copy {
+        padding: 5px 0;
+    }
+    .hero-copy > p {
+        max-width: 330px;
+        margin-bottom: 22px;
+    }
+    .hero-image {
+        height: 230px;
+    }
+    .image-caption {
+        padding: 15px 18px;
+        font-size: 8px;
+    }
+    .eyebrow {
+        font-size: 8px;
+        letter-spacing: 1.5px;
+    }
+    .menu-section {
+        padding: 32px 20px 45px;
+    }
+    .section-heading {
+        gap: 14px;
+        flex-wrap: wrap;
+        margin-bottom: 25px;
+    }
+    .section-heading h2 {
+        font-size: 29px;
+    }
+    .section-heading .eyebrow {
+        margin-bottom: 10px;
+    }
+    .table-indicator {
+        font-size: 10px;
+        padding: 7px 12px;
+    }
+    .menu-toolbar {
+        flex-wrap: wrap;
+        gap: 15px;
+    }
+    .tabs {
+        gap: 3px;
+    }
+    .tabs button {
+        font-size: 11px;
+        padding: 8px 10px;
+    }
+    .search {
+        max-width: none;
+        width: 100%;
+    }
+    .menu-grid {
+        gap: 17px 12px;
+    }
+    .food-image {
+        height: 150px;
+    }
+    .food-body {
+        padding: 13px;
+    }
+    .food-body h3 {
+        font-size: 17px;
+        min-height: 40px;
+        line-height: 1.2;
+    }
+    .food-body p {
+        font-size: 10px;
+        min-height: 49px;
+    }
+    .food-category {
+        left: 7px;
+        top: 7px;
+        font-size: 7px;
+        padding: 4px 6px;
+    }
+    .menu-index {
+        font-size: 7px;
+        letter-spacing: 0.8px;
+    }
+    .food-bottom {
+        margin-top: 15px;
+        gap: 4px;
+    }
+    .food-bottom strong {
+        font-size: 13px;
+    }
+    .food-bottom small {
+        font-size: 8px;
+    }
+    .add-btn {
+        min-width: 29px;
+        height: 29px;
+        padding: 4px;
+    }
+    .add-btn svg {
+        width: 16px;
+    }
+    .cart {
+        padding: 23px;
+        margin-top: 20px;
+    }
+    .cart-empty {
+        padding: 25px 0;
+    }
+    .login-layout {
+        padding: 0 20px;
+        margin: 35px auto 45px;
+        gap: 28px;
+    }
+    .login-layout h1 {
+        font-size: 37px;
+    }
+    .login-form {
+        padding: 25px;
+    }
+    .tracking {
+        padding: 0 20px;
+        margin-top: 35px;
+    }
+    .tracking-intro h1 {
+        font-size: 36px;
+    }
+    .tracking-intro p {
+        font-size: 12px;
+    }
+    .step strong {
+        font-size: 10px;
+    }
+    .receipt {
+        padding: 22px;
+    }
+    .receipt-row {
+        font-size: 12px;
+    }
+    .receipt h2 {
+        font-size: 19px;
+    }
+    .admin-page {
+        padding: 30px 20px 50px;
+    }
+    .admin-page h1 {
+        font-size: 32px;
+    }
+    .admin-page .section-heading p {
+        font-size: 12px;
+    }
+    .table-grid {
+        gap: 12px;
+    }
+    .table-card {
+        padding: 13px;
+    }
+    .table-card h2 {
+        font-size: 16px;
+    }
+    .table-card .icon-btn {
+        padding: 5px;
+    }
+    .stats-row > div {
+        padding: 18px;
+    }
+    .stats-row strong {
+        font-size: 21px;
+    }
+    .stats-row span {
+        font-size: 10px;
+    }
+    .report-filters {
+        gap: 12px;
+    }
+    .report-filters .btn {
+        width: 100%;
+    }
+    .modal {
+        padding: 22px;
+    }
+    .modal-backdrop {
+        padding: 12px;
+    }
+    .form-grid {
+        gap: 10px;
+    }
+    footer {
+        padding-inline: 20px;
+        gap: 12px;
+    }
+    footer small {
+        max-width: none;
+        width: 100%;
+    }
+}
+
+@media (prefers-reduced-motion: reduce) {
+    html {
+        scroll-behavior: auto;
+    }
+    * {
+        transition: none !important;
+    }
+}

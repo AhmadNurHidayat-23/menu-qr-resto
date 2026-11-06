@@ -1,0 +1,253 @@
+.eyebrow {
+    font-size: 10px;
+    letter-spacing: 2px;
+    font-weight: 650;
+    color: var(--accent);
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.eyebrow > span {
+    width: 6px;
+    height: 6px;
+    border-radius: 100%;
+    background: var(--accent);
+}
+
+.hero {
+    max-width: 1440px;
+    margin: 0 auto;
+    padding: 48px 56px 52px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 50px;
+    align-items: center;
+}
+
+.hero-copy {
+    padding: 20px 0;
+}
+
+.hero h1 {
+    margin: 22px 0;
+    font-size: clamp(56px, 6vw, 88px);
+}
+
+.hero-copy > p {
+    font-size: 15px;
+    max-width: 340px;
+    color: #6a6d60;
+    margin-bottom: 30px;
+}
+
+.hero-meta {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 16px;
+    font-size: 10px;
+    color: var(--muted);
+    margin-top: 35px;
+}
+
+.hero-meta span {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.hero-meta span + span {
+    border-left: 1px solid var(--line);
+    padding-left: 16px;
+}
+
+.hero-image {
+    height: 427px;
+    position: relative;
+}
+
+.hero-image > img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 3px;
+}
+
+.image-caption {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: #27352ce8;
+    color: #fff;
+    padding: 20px 23px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 9px;
+    letter-spacing: 2px;
+}
+
+.menu-section {
+    max-width: 1440px;
+    padding: 48px 56px 80px;
+    margin: auto;
+    border-top: 1px solid var(--line);
+}
+
+.section-heading {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+    margin-bottom: 28px;
+}
+
+.section-heading .eyebrow {
+    margin-bottom: 12px;
+}
+
+.section-heading p {
+    font-size: 13px;
+    color: var(--muted);
+    margin-top: 12px;
+}
+
+.table-indicator {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    border: 1px solid var(--line);
+    border-radius: 30px;
+    padding: 9px 15px;
+    font-size: 11px;
+    white-space: nowrap;
+}
+
+.dot {
+    height: 7px;
+    width: 7px;
+    border-radius: 100%;
+    background: #46745b;
+    display: inline-block;
+    flex-shrink: 0;
+}
+
+.muted {
+    background: #9a9b8f;
+}
+
+.dot.accepted {
+    background: #b47d28;
+}
+
+.dot.processing {
+    background: #b9442b;
+}
+
+.dot.ready {
+    background: #46745b;
+}
+
+.ordering-layout {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) 310px;
+    gap: 30px;
+    align-items: start;
+}
+
+.menu-toolbar {
+    margin-bottom: 25px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 16px;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.tabs {
+    display: flex;
+    gap: 5px;
+    flex-wrap: wrap;
+}
+
+.tabs button {
+    background: none;
+    border: 1px solid transparent;
+    padding: 9px 12px;
+    font-size: 12px;
+    border-radius: 3px;
+    color: #74766b;
+    white-space: nowrap;
+}
+
+.tabs button.active {
+    background: #293b30;
+    color: white;
+}
+
+.tabs button:hover:not(.active) {
+    background: #eeeee5;
+}
+
+.search {
+    margin: 0;
+    display: flex;
+    align-items: center;
+    gap: 7px;
+    max-width: 190px;
+    border-bottom: 1px solid #bfc2b5;
+    padding-bottom: 4px;
+    color: var(--muted);
+}
+
+.search input {
+    border: 0;
+    background: none;
+    padding: 6px 0;
+    width: 100%;
+    font-size: 12px;
+    outline: 0;
+}
+
+.menu-grid {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 25px 22px;
+}
+
+.menu-card {
+    border: 1px solid var(--line);
+    background: #fcfcf8;
+    border-radius: 4px;
+    overflow: hidden;
+}
+
+.food-image {
+    height: 185px;
+    position: relative;
+    overflow: hidden;
+}
+
+.food-image > img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.3s;
+}
+
+.menu-card:hover .food-image > img {
+    transform: scale(1.035);
+}
+
+.food-category {
+    position: absolute;
+    left: 12px;
+    top: 12px;
+    background: #f8f7f2ed;
+    padding: 5px 9px;
+    font-size: 9px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    border-radius: 2px;
+}
