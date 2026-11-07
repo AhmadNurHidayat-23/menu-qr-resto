@@ -15,6 +15,16 @@ class Order extends Model
         return ['paid_at' => 'datetime', 'completed_at' => 'datetime', 'total' => 'integer'];
     }
 
+    public function diningTable()
+    {
+        return $this->belongsTo(DiningTable::class);
+    }
+
+    public function isPaid(): bool
+    {
+        return $this->paid_at !== null;
+    }
+
     public function items()
     {
         return $this->hasMany(OrderItem::class);

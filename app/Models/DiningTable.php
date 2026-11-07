@@ -12,4 +12,9 @@ class DiningTable extends Model
     {
         return ['active' => 'boolean'];
     }
+
+    public function orders()
+    {
+        return $this->hasMany(Order::class);
+    }
 }
